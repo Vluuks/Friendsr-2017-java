@@ -13,7 +13,7 @@
 
 
         android:id="@+id/profile_image"
-        android:src="@drawable/tim"
+        android:src="@drawable/ic_launcher_foreground"
         android:scaleType="fitCenter"
 
         app:riv_corner_radius="30dip"
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Tim de Test"
+        android:id="@+id/user_name"
         android:fontFamily="@font/luna"/>
 
 </LinearLayout>
