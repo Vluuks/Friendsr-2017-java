@@ -43,7 +43,7 @@ public class GridListAdapter extends ArrayAdapter {
 
         User currentUser = userList.get(position);
         image.setImageResource(currentUser.getDrawableId());
-        text.setText("De TimTest!!");
+        text.setText(currentUser.getName());
 
         return convertView;
     }

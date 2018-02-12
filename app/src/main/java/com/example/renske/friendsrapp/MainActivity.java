@@ -25,14 +25,36 @@ public class MainActivity extends AppCompatActivity {
                                 23,
                                 getResources().getIdentifier("tim", "drawable", getPackageName())
         );
+        User testMartijn = new User("Martijn",
+                                "Ik ben Martijn, a1.20 is echt altijd koud!",
+                                35,
+                                    getResources().getIdentifier("martijn", "drawable", getPackageName())
+        );
+        User testJulia = new User("Julia",
+                "oeh moeilijke keus",
+                22,
+                getResources().getIdentifier("julia", "drawable", getPackageName())
+        );
+        User testMarijn = new User("Marijn",
+                "IK BEN EEN HACKER",
+                22,
+                getResources().getIdentifier("marijn", "drawable", getPackageName())
+        );
+
 
         // add 5 tims for the test
         userList.add(testTim);
+        userList.add(testMartijn);
+        userList.add(testJulia);
+        userList.add(testMarijn);
         userList.add(testTim);
+        userList.add(testMartijn);
+        userList.add(testJulia);
+        userList.add(testMarijn);
         userList.add(testTim);
-        userList.add(testTim);
-        userList.add(testTim);
-
+        userList.add(testMartijn);
+        userList.add(testJulia);
+        userList.add(testMarijn);
 
         // set adapter and shit
         setGridView();
