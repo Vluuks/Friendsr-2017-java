@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Renske on 11/02/2018.
@@ -38,8 +37,8 @@ public class GridListAdapter extends ArrayAdapter {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        ImageView image = convertView.findViewById(R.id.profile_image);
-        TextView text = convertView.findViewById(R.id.user_name);
+        ImageView image = convertView.findViewById(R.id.picture_list);
+        TextView text = convertView.findViewById(R.id.name_list);
 
         User currentUser = userList.get(position);
         image.setImageResource(currentUser.getDrawableId());

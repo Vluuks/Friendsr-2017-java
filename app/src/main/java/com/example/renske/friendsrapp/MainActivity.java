@@ -1,5 +1,6 @@
 package com.example.renske.friendsrapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -102,6 +103,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             Log.d("YO", "klinkerdieklink");
+
+            User clickedUser = (User) adapterView.getItemAtPosition(i);
+
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            intent.putExtra("User", clickedUser);
+            startActivity(intent);
         }
     }
 }

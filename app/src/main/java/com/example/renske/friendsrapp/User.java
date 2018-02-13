@@ -2,21 +2,24 @@ package com.example.renske.friendsrapp;
 
 import android.graphics.drawable.Drawable;
 
+import java.io.Serializable;
+
 /**
  * Created by Renske on 11/02/2018.
  */
 
-public class User {
+public class User implements Serializable {
 
     private String name, bio;
     private int age, drawableId;
-    private double rating;
+    private float rating;
 
     public User(String aName, String aBio, int anAge, int aDrawableId) {
         name = aName;
         bio = aBio;
         age = anAge;
         drawableId = aDrawableId;
+        rating = 3.0f; // TODO
     }
 
 
@@ -46,11 +49,11 @@ public class User {
         this.age = age;
     }
 
-    public double getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 

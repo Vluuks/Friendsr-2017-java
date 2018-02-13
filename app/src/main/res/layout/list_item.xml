@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Tim"
-        android:id="@+id/user_name"
+        android:id="@+id/name_list"
         android:fontFamily="@font/luna"/>
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -20,7 +20,7 @@
         android:layout_gravity="top"
         android:layout_marginTop="0dp"
 
-        android:id="@+id/profile_image"
+        android:id="@+id/picture_list"
         android:src="@drawable/ic_launcher_foreground"
 
         app:riv_corner_radius="20dip"
